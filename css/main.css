@@ -1,6 +1,227 @@
-header{
-    background-color: #27273f;
+/* тему шрифты нужно ещё раз глянуть */
+@font-face {
+    font-family: 'gotham_proregular';
+    src: url('/fonts/gothampro-webfont.woff2') format('woff2'),
+         url('/fonts/gothampro-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
 }
-.container {
+
+@font-face {
+    font-family: 'gotham_probold';
+    src: url('/fonts/gothaprobol-webfont.woff2') format('woff2'),
+         url('/fonts/gothaprobol-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham_prolight';
+    src: url('/fonts/gothaprolig-webfont.woff2') format('woff2'),
+         url('/fonts/gothaprolig-webfont.woff') format('woff');
+    font-weight: 300l;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham_prolight_italic';
+    src: url('/fonts/gothaproligita-webfont.woff2') format('woff2'),
+         url('/fonts/gothaproligita-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('/fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('/fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('/fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('/fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+/* СТРАНИЦА -------------------------------------*/
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 1.42;
+}
+h1, h2, h3, 
+ul
+/*, 
+ li*/ { 
+    padding: 0; margin: 0;
+}
+
+/* body {
+
+} */
+.wrapper {
+    overflow: hidden;
+    min-width: 1100px;
+}
+
+.header {
+    background-color: #2b2b40;
+    width: 100%;
+}
+
+.header .container {
+    height: 75px;
     width: 1100px;
+    color: white;
 }
+
+.header .logo {
+margin-left: 20px;
+position: relative;
+/* background: green; */
+/* vertical-align: middle;  */
+ z-index: 1000;
+ height: 100%;
+ width: 100px;
+}
+
+.header .logo__link {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0; padding: 0; 
+  /* border: 2px solid red; */
+    height: 100%; 
+    width: 100%;
+     position: relative; 
+}
+ 
+.header .logo__img {
+    /* display: block; */
+    /* vertical-align: middle; */
+   position: absolute;
+   margin: auto;
+   top: 0; right: 0; left: 0; bottom: 0;
+} /**/
+
+.header .contacts {
+    display: inline-block;
+    position: absolute;
+    right: 0; top: 0;}
+
+.container {
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 1100px;
+    /* background-color: yellow; */
+    height: 100%;
+    position: relative;
+}
+/* ОБЛОЖКА---------------------------------- */
+.cover {
+    margin: 0 auto; padding: 0 auto;
+    background: pink;
+    /* width: 1100px; */
+    overflow: hidden;}
+
+.cover__img {
+    display: block;
+    margin: 0; padding: 0;
+}
+
+
+/* БОКОВОЕ МЕНЮ----------------------------- */
+.sidebar, .main {
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: 0px;
+    padding-top: 66px;
+    /* font-family:'go' */
+}
+
+    .sidebar {
+        /* margin: 0; padding: 0; */
+        width: 190px;
+        background-color: lightgray;
+        font-family: 'gotham_probold', sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 54px;
+    }
+
+.menu {
+    margin: 0px 0 0 20px; padding: 0;
+   }
+
+
+/* ------------------------------------- */
+.container__page {
+    letter-spacing: -5px;
+}
+
+    .main {
+        width: 910px;
+        background: lightgreen;
+        margin: 0; 
+      /*   padding: 0; */
+    }
+
+    .features__title {
+        font-family: 'gotham_probold', sans-serif;
+        font-size: 48px;
+    }
+
+.features-row {
+    /* width: 100%; */
+    letter-spacing: -4px;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 150px;
+}
+
+.features-unit {
+    font-size: 18px;
+    font-family: 'gotham_proregular', sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    width: 230px;
+    letter-spacing: 0px;
+    background: yellow;
+    text-align: center;
+    margin-right: 60px;
+}
+
+.feautures-unit:nth-child(2), .feautures-unit:nth-child(3) {
+    margin-left: 66px;
+    background:burlywood;
+}
+
+.features-unit__list {
+    /* padding-left: 20px; */
+    text-align: left;
+    background: red;
+    margin: default;
+    padding: default;
+}
+
+.features-unit__title {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'gotham_probold',sans-serif;
+    font-weight: 700;
+}
+
+/* .features-unit__list-item {
+    margin-left: 20px;
+} */
