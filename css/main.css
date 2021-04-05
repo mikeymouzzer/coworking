@@ -152,7 +152,7 @@ position: relative;
     .sidebar {
         /* margin: 0; padding: 0; */
         width: 190px;
-        background-color: lightgray;
+        /* background-color: lightgray; */
         font-family: 'gotham_probold', sans-serif;
         font-size: 12px;
         text-transform: uppercase;
@@ -165,29 +165,54 @@ position: relative;
     list-style: none;
     }
 
-   .menu-item__link::before {
+.menu-item__link {
+    text-decoration: none;
+    color: #ca2376;
+    /* ===================================== */
+    display: inline-block;
+}
+
+.menu__item:hover .menu-item__link {
+    border-bottom: #d3d3d3 solid 1px;
+    color: black; 
+}
+   .menu-item__link:before {
     content: "";
     width: 20px;
     height: 20px;
     display: inline-block;
-    background: red;
+    /* background: red; */
     margin-right: 18px;
     vertical-align: middle;
    }
 
+   .menu__item:first-child .menu-item__link:before {
+    background-image: url(/img/main_icon.png);
+           }
+    
+       .menu__item:nth-child(2) .menu-item__link:before {
+        background: url(/img/feed_icon.png);
+    }
+    
+    .menu__item:nth-child(3) .menu-item__link:before {
+        background: url(/img/wallet_icon.png);
+    }
+
    .menu__item:first-child:hover .menu-item__link:before {
 background-image: url(/img/main_icon_hover.png);
+
    }
 
    .menu__item:nth-child(2):hover .menu-item__link:before {
-    background: url(/img/feed_icon_hover.png)
+    background: url(/img/feed_icon_hover.png);
 }
 
 .menu__item:nth-child(3):hover .menu-item__link:before {
-    background: url(/img/wallet_icon_hover.png)
+    background: url(/img/wallet_icon_hover.png);
 }
 
-/* ------------------------------------- */
+/* КОНТЕНТ -----------------------------------------------*/
+/* ====================================================== */
 .container__page {
     letter-spacing: -5px;
 }
@@ -198,6 +223,8 @@ background-image: url(/img/main_icon_hover.png);
         margin: 0; 
       /*   padding: 0; */
     }
+
+    /* ОСОБЕНОСТИ================================== */
 
     .features__title {
         font-family: 'gotham_probold', sans-serif;
@@ -220,13 +247,13 @@ background-image: url(/img/main_icon_hover.png);
     font-family: 'gotham_proregular', sans-serif;
     display: inline-block;
     vertical-align: top;
-    width: 220px;
+    width: 250px;
     letter-spacing: 0px;
     background: yellow;
     text-align: center;
     /* margin-right: 60px; */
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .feautures-unit:nth-child(2), .feautures-unit:nth-child(3) {
@@ -265,8 +292,14 @@ background-image: url(/img/main_icon_hover.png);
     text-transform: uppercase;
     font-family: 'gotham_probold',sans-serif;
     font-weight: 700;
+    margin-top: 30px;
+    letter-spacing: .1em;
 }
 
-/* .features-unit__list-item {
-    margin-left: 20px;
-} */
+.features-unit__subtitle {
+    margin-top: 18px;
+    font-family: 'gotham_proregular', sans-serif;
+    font-weight: 400;
+    margin: 18px 0 0 0;
+
+}
