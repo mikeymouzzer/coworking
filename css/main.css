@@ -169,7 +169,8 @@ position: relative;
     text-decoration: none;
     color: #ca2376;
     /* ===================================== */
-    display: inline-block;
+    /* display: inline-block; */
+    /* height: 1em; margin: 0; padding: 0; background: yellow; */
 }
 
 .menu__item:hover .menu-item__link {
@@ -184,7 +185,7 @@ position: relative;
     /* background: red; */
     margin-right: 18px;
     vertical-align: middle;
-   }
+}
 
    .menu__item:first-child .menu-item__link:before {
     background-image: url(/img/main_icon.png);
@@ -198,9 +199,8 @@ position: relative;
         background: url(/img/wallet_icon.png);
     }
 
-   .menu__item:first-child:hover .menu-item__link:before {
+ .menu__item:first-child:hover .menu-item__link:before {
 background-image: url(/img/main_icon_hover.png);
-
    }
 
    .menu__item:nth-child(2):hover .menu-item__link:before {
