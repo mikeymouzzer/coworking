@@ -346,3 +346,15 @@ background-image: url(/img/main_icon_hover.png);
     margin: 18px 0 0 0;
 
 }
+
+/* НОВОСТИ----------------------------- */
+
+h2.feed__title {
+    margin-top: 90px;
+    font-size: 48px;
+    font-family: 'gotham_probold', sans-serif;
+}
+
+/* h3.feed__title {
+
+} */
