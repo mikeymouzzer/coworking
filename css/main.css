@@ -66,21 +66,16 @@ body {
     margin: 0; padding: 0;
 }
 
-h1, h2, h3, 
-ul
-, 
- li { 
+h1, h2, h3, ul,  li { 
     padding: 0; margin: 0;
 }
 
-/* body {
-
-} */
 .wrapper {
     overflow: hidden;
     min-width: 1100px;
 }
 
+/* HEADER================= */
 .header {
     background-color: #2b2b40;
     width: 100%;
@@ -90,6 +85,9 @@ ul
     height: 75px;
     width: 1100px;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: burlywood; */
 }
 
 .header .logo {
@@ -121,12 +119,16 @@ position: relative;
 } /**/
 
 .header .contacts {
-    position: absolute;
-    right: 20px; top: 0;
+    /* position: absolute;
+    right: 10px; top: 0; */
     /* background: pink; */
     height: 100%;
     width: 200px;
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
 }
 
 .contacts__holder {    
@@ -134,9 +136,9 @@ position: relative;
     /* display: inline-block; */
     /* vertical-align: middle; */
     /* background: yellow; */
-    position: absolute;
+    /* position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
 }
 
 .phone {
@@ -215,7 +217,7 @@ text-align: right;
     }
 
 .menu {
-    margin: 50px 0 0 22px; padding: 0;
+    margin: 52px 0 0 22px; padding: 0;
     list-style: none;
     }
 
@@ -270,7 +272,8 @@ background-image: url(/img/main_icon_hover.png);
 /* КОНТЕНТ -----------------------------------------------*/
 /* ====================================================== */
 .container__page {
-    letter-spacing: -5px;
+    /* letter-spacing: -5px; */
+    display: flex;
 }
 
     .main {
@@ -290,8 +293,9 @@ background-image: url(/img/main_icon_hover.png);
     }
 
 .features-row {
+    display: flex;
     /* width: 100%; */
-    letter-spacing: -4px;
+    /* letter-spacing: -4px; */
     margin-top: 38px;
     /* margin-left: 20px; */
     /* margin-right: 150px; */
@@ -327,7 +331,7 @@ background-image: url(/img/main_icon_hover.png);
 
 .featuures-unit__img {
     display: block;
-    width: 28px; height: 28px;
+    width: 32px; height: 32px;
     /* background: center center / no-repeat contain ; */
     position: absolute;
     margin: auto;
@@ -377,9 +381,10 @@ h2.feed__title {
 
 .feed__list {
     list-style: none;
-    margin-top: 26px;
+    margin-top: 36px;
 }
 .feed__item {
+    display: flex;
     padding-top: 30px;
     padding-bottom: 20px;
     /* width: 888px; */
@@ -398,7 +403,7 @@ border-bottom: none;
     width: 160px;
     height: 160px;
     /* background: yellow; */
-    display: inline-block;
+    /* display: inline-block; */
     margin-right: 20px;
     vertical-align: middle;
     /* position: relative; */
@@ -415,7 +420,7 @@ display: block;
 }
 
 .feed__content {
-    display: inline-block;
+    /* display: inline-block; */
     overflow: hidden;
     /* background: pink; */
     vertical-align: middle;
@@ -440,31 +445,47 @@ font-family: robotobold, sans-serif;
 
 /* ПАГИНАЦИЯ================= */
 
-.pagination__display, 
-.pagination__control, .pagination__list, .pagination__item  {
-    display: inline-block;
-}
-
 .pagination {
     text-align: center;
-    
-}
-
-.pagination {
-    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
     font-family: robotolight, sans-serif;
     font-size: 14px;
+    /* background-color: burlywood; */
+}
+
+.pagination__holder {
+display: flex;
+/* background-color: cadetblue; */
+align-items: center;
+}
+
+.pagination__list {
+display: flex;
+list-style: none;
+/* background-color: chartreuse; */
+align-items: center;
 }
 
 .pagination__display {
-    margin-right: 20px;
+    padding-right: 8px;
     /* margin-left: 20px; */
+    display: flex;
+    align-items: center;
+}
+
+.pagination__control {
+display: flex;
+align-items: center;
+padding: 10px;
 }
 
 .pagination__control-link {
-   padding: 14px;
+   padding: 10px;
    text-decoration: none;
-   background-color: yellow;;
+   background-color: yellow;
 }
 
 .pagination__control-link--left {
@@ -479,19 +500,9 @@ font-family: robotobold, sans-serif;
     opacity: .3;
 }
 
-
-.pagination__list {
-    /* background: red; */
-    letter-spacing: 0;
-}
-
-.pagination__list, .pagination__item {
-    margin: -4px; padding: 0;
-    /* letter-spacing: -4px; */
-}
 .pagination__link {
     text-align: center;
-    padding: 4px 10px ;
+    padding: 4px 9px ;
     text-decoration: none;
     font-family: robotobold, sans-serif;
     font-size: 14px;
@@ -507,23 +518,23 @@ font-family: robotobold, sans-serif;
 .footer {
     width: 100%;
     background-color: #2b2b40;
-    margin-top: 74px;
+    margin-top: 62px;
     color: white;
 }
 
 .footer .container {
     height: 78px; position: relative;
-}
-
-.footer .copyright, .footer .logo, .social{
-    display: inline-block; vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .footer .copyright {
     width: 272px;
-    padding: 12px 0 0px 18px;
+    padding: 0px 0 0px 0px;
     font-family: robotolight, sans-serif;
     font-size: 14px;
+    padding-left: 20px;
 }
 
 .copyright__link {
@@ -533,24 +544,25 @@ font-family: robotobold, sans-serif;
 }
 
 .social {
-    width: 210px;
+    width: 190px;
     /* background: black; */
-    position: absolute;
-    right: 0;
-    padding-right: 20px; padding-left: 20px;
-    padding-top: 16px;
+    /* position: absolute;
+    right: 0; */
+    /* padding-right: 20px; padding-left: 20px;
+    padding-top: 16px; */
     font-family: gothamprobold, sans-serif;
     font-weight: 700;
     font-size:  14px;
 }
 
 .social__title {
-    text-align: right; color: white;
+    padding-top: 10px;
+    /* background-color: crimson; */
 }
 
 .social__list {
-    margin-left: 46px;
-    margin-top: 4px;
+display: flex;
+padding-top: 10px;
 }
 
 .social__item {
@@ -688,6 +700,7 @@ display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
 width: 640px;
+background: grey;
 }
 
 .partners__unit-box {
@@ -700,6 +713,7 @@ justify-content: center;
 .partners__unit {
  width: 180px; height: 80px;
 border: 2px solid red;
+
 }
 
 .partners__unit-box:first-child .partners__unit {
