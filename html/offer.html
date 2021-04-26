@@ -21,7 +21,7 @@
             <div class="contacts">
                 <div class="contacts__holder">
                     <div class="phone">
-                        <a href="#" class="phone__number">8 (800) 00-392-10</a>
+                        <a href="tel: +78000039210" class="phone__number">8 (800) 00-392-10</a>
                     </div>
                     <div class="schedule">
                         <div class="schedule__title">
@@ -38,13 +38,13 @@
         </header>
     <!----I guess, it's right name for page content.-------------->
         <div class="page">
-            <div class="container container__page">
+            <div class="container container--page">
                 <!--Боковое меню-------------------------------------->
                 <nav class="sidebar">
-                    <ul class="menu">
-                        <li class="menu__item "><a href="/index.html" class="menu-item__link"><span class="menu-item__link-text">Главная</span></a></li>
-                        <li class="menu__item"><a href="#" class="menu-item__link"><span class="menu-item__link-text">Отзывы</span></a></li>
-                        <li class="menu__item menu__item--current"><a href="/html/offer.html" class="menu-item__link"><span class="menu-item__link-text">Тарифы</span></a></li>
+                    <ul class="menu menu--offer">
+                        <li class="menu__item "><a href="/index.html" class="menu__link"><span class="menu__link-text">Главная</span></a></li>
+                        <li class="menu__item"><a href="/html/comments.html" class="menu__link"><span class="menu__link-text">Отзывы</span></a></li>
+                        <li class="menu__item menu__item--current"><a href="/html/offer.html" class="menu__link"><span class="menu__link-text">Тарифы</span></a></li>
                     </ul>
                 </nav>
                 <!--КОНТЕНТ-------------------------------------->
@@ -52,10 +52,10 @@
                     <nav class="breadscrumbs">
                         <ul class="breadscrumbs__list">
                             <li class="breadscrumbs__item"><a href="/index.html" class="breadscrumbs__link">Главная</a></li>
-                            <li class="breadscrumbs__item"><a href="/html/offer.html" class="breadscrumbs__link">Тарифы</a></li>
+                            <li class="breadscrumbs__item breadscrumbs__item--current"><a href="/html/offer.html" class="breadscrumbs__link">Тарифы</a></li>
                         </ul>
                     </nav>
-                    <h1 class="title title__tarifs">Тарифы</h1>
+                    <h1 class="title title--tarifs">Тарифы</h1>
                     <div class="price">
                         <div class="price-row">
                             <div class="offer">
@@ -64,78 +64,65 @@
                                     <div class="offer__img-overlay"></div>
                                     <div class="offer__name">&#171;Один&#187;</div>
                                 </div>
-                                <h3 class="offer__title">800 р/мес или&nbsp;100&nbsp;р/сутки</h3>
-                                <div class="offer__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                    Repellendus pariatur, culpa nam vitae suscipit explicabo porro. 
-                                    Quasi libero maiores expedita voluptatibus porro aperiam. 
-                                    Tempore voluptatem amet natus? Explicabo, labore cumque.</div>
+                                <h3 class="offer__title">800 руб/мес <br> или&nbsp;100&nbsp;руб/сутки</h3>
+                                <div class="offer__description">Оплачивается рабочее место на 1 человека. 
+                                    Есть возможность оплаты с привязкой к определенному физическому месту. При оплате за год, скидка 30%.</div>
                             </div>
                             <div class="offer">
                                 <div class="offer__img-box">
                                     <img class="offer__img" alt="Картинка" src="/img/offer/three.png">
                                     <div class="offer__img-overlay"></div>
-                                    <div class="offer__name">&#171;Один&#187;</div>
+                                    <div class="offer__name">&#171;Трое&#187;</div>
                                 </div>
-                                <h3 class="offer__title">800 р/мес или&nbsp;100&nbsp;р/сутки</h3>
-                                <div class="offer__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                    Repellendus pariatur, culpa nam vitae suscipit explicabo porro. 
-                                    Quasi libero maiores expedita voluptatibus porro aperiam. 
-                                    Tempore voluptatem amet natus? Explicabo, labore cumque.</div>
+                                <h3 class="offer__title">1 500&nbsp;руб/мес <br> или&nbsp;200&nbsp;руб/сутки</h3>
+                                <div class="offer__description">Оплачивается стол на 3 рабочих места. 
+                                    При этом можно ими пользоваться как одновременно, так и поочередно. Можно пользоваться офисной техникой и выделенным шкафом <br> для документов.</div>
                             </div>
                             <div class="offer">
                                 <div class="offer__img-box">
                                     <img class="offer__img" alt="Картинка" src="/img/offer/three.png">
                                     <div class="offer__img-overlay"></div>
-                                    <div class="offer__name">&#171;Один&#187;</div>
+                                    <div class="offer__name">&#171;10 - 10&#187;</div>
                                 </div>
-                                <h3 class="offer__title">800 р/мес или&nbsp;100&nbsp;р/сутки</h3>
-                                <div class="offer__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                    Repellendus pariatur, culpa nam vitae suscipit explicabo porro. 
-                                    Quasi libero maiores expedita voluptatibus porro aperiam. 
-                                    Tempore voluptatem amet natus? Explicabo, labore cumque.</div>
+                                <h3 class="offer__title">10 000 руб/мес</h3>
+                                <div class="offer__description">Оплачивается 10 рабочих мест на любые 10 дней месяца. Отлично подходит для периодической 
+                                    работы команды сотрудников без строгой привязки к рабочему месту. При оплате на год вперед скидка 25% </div>
                             </div>
                         </div>
-                        <div class="price-row">
-                        <div class="offer">
+                        <div class="price-row">                            
+                            <div class="offer">
                                 <div class="offer__img-box">
                                     <img class="offer__img" alt="Картинка" src="/img/offer/three.png">
                                     <div class="offer__img-overlay"></div>
-                                    <div class="offer__name">&#171;Один&#187;</div>
+                                    <div class="offer__name">&#171;Безлимит на&nbsp;одного&#187;</div>
                                 </div>
-                                <h3 class="offer__title">800 р/мес или&nbsp;100&nbsp;р/сутки</h3>
-                                <div class="offer__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                    Repellendus pariatur, culpa nam vitae suscipit explicabo porro. 
-                                    Quasi libero maiores expedita voluptatibus porro aperiam. 
-                                    Tempore voluptatem amet natus? Explicabo, labore cumque.</div>
+                                <h3 class="offer__title">2 500 руб/мес</h3>
+                                <div class="offer__description">В стоимость включена не только оплата рабочего места, но и пользование копировальной техникой, бесплатный кофе или чай в течение дня, возможность использования зала для переговоров при предварительном бронировании 1 раз в месяц.</div>
                             </div>
                             <div class="offer">
                                 <div class="offer__img-box">
                                     <img class="offer__img" alt="Картинка" src="/img/offer/three.png">
                                     <div class="offer__img-overlay"></div>
-                                    <div class="offer__name">&#171;Один&#187;</div>
+                                    <div class="offer__name">&#171;Все<br>включено&#187;</div>
                                 </div>
-                                <h3 class="offer__title">800 р/мес или&nbsp;100&nbsp;р/сутки</h3>
-                                <div class="offer__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                    Repellendus pariatur, culpa nam vitae suscipit explicabo porro. 
-                                    Quasi libero maiores expedita voluptatibus porro aperiam. 
-                                    Tempore voluptatem amet natus? Explicabo, labore cumque.</div>
+                                <h3 class="offer__title">Цена рассчитывается индивидуально</h3>
+                                <div class="offer__description">Цена рассчитывается индивидуально Оплачивается необходимое число рабочих мест 
+                                    с привязкой к фактическому местонахождению. В стоимость включены рабочие столы, мебель для хранения документов,
+                                     отдельный принтер и копировальный автомат.</div>
                             </div>
                             <div class="offer">
                                 <div class="offer__img-box">
                                     <img class="offer__img" alt="Картинка" src="/img/offer/three.png">
                                     <div class="offer__img-overlay"></div>
-                                    <div class="offer__name">&#171;Один&#187;</div>
+                                    <div class="offer__name">&#171;Переговоры&#187;</div>
                                 </div>
-                                <h3 class="offer__title">800 р/мес или&nbsp;100&nbsp;р/сутки</h3>
-                                <div class="offer__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                    Repellendus pariatur, culpa nam vitae suscipit explicabo porro. 
-                                    Quasi libero maiores expedita voluptatibus porro aperiam. 
-                                    Tempore voluptatem amet natus? Explicabo, labore cumque.</div>
+                                <h3 class="offer__title">2 500 руб/час</h3>
+                                <div class="offer__description">Аренда среднего зала. Есть возможность раннего бронирования конференц-залов со скидкой до 30% при полной предоплате.</div>
                             </div>
                         </div>
                     </div>
                     <!-- ПАРТНЁРЫ================= -->
-                    <h2 class="title title__partners">Партнёры</h2>
+                    <h2 class="title title--partners">Партнёры</h2>
                     <div class="partners">
                         <div class="partners__row">
                             <div class="partners__unit-box">
@@ -165,10 +152,10 @@
                 </main>
             </div>
         </div>
-        <footer class="footer">
+        <footer class="footer footer--offer">
             <div class="container">
                 <div class="copyright">
-                    Сделано с любовью и старанием на&nbsp;курсе "HTML + CSS" в <a href="" class="copyright__link">LoftSchool</a>.
+                    Сделано с любовью и старанием на&nbsp;курсе "HTML + CSS" в <a href="https://loftschool.com/" class="copyright__link">LoftSchool</a>.
                     Автор&nbsp;работы: <a href="" class="copyright__link">Винни&nbsp;Пух</a>
                 </div>
                 <div class="logo">
@@ -176,19 +163,21 @@
                         <img src="/img/logo.png" alt="" class="logo__img">
                     </a>
                 </div>
-                <div class="social">
-                    <div class="social__title">
-                        Наши социальные сети
+                <div class="social-holder">
+                    <div class="social">
+                        <div class="social__title">
+                            Наши социальные сети
+                        </div>
+                        <ul class="social__list">
+                            <li class="social__item social__item"><a href="" class="social__link social__link-vk"></a></li>
+                            <li class="social__item"><a href="" class="social__link social__link-fb"></a>
+                            </li>
+                            <li class="social__item"><a href="" class="social__link social__link-twitter"></a>
+                            </li>
+                            <li class="social__item"><a href="" class="social__link social__link-mail"></a>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="social__list">
-                        <li class="social__item social__item"><a href="" class="social__link social__link-vk"></a></li>
-                        <li class="social__item"><a href="" class="social__link social__link-fb"></a>
-                        </li>
-                        <li class="social__item"><a href="" class="social__link social__link-twitter"></a>
-                        </li>
-                        <li class="social__item"><a href="" class="social__link social__link-mail"></a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </footer>
