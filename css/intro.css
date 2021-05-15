@@ -3,11 +3,20 @@
     margin: 0; padding: 0;
 }
 
-.cover--intro {
+.wrapper { background: yellow;
     height: 100vh;
     min-width: 100vw;
+}
+
+.cover--intro {
+    height: 100%;
+    min-width: 100%;
     background: no-repeat url(/img/background__intro.png);
-    background-size: cover;
+    background-size: cover ;
+    background-position: 50% 1%;
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 1;
 }
 
 .wrapper, .cover--intro {
@@ -18,15 +27,14 @@ justify-content: center;
 }
 
 .logo--intro {
-    padding-bottom: 30px;
+    padding-bottom: 26px;
 }
 
 .button {
-    width: 180px;
-    height: 40px;
+    width: 183px;
+    height: 45px;
     border: 2px solid #ec1e79;
-    display: flex;
-    /* margin: auto; */
+     background-color: transparent;
     }
 
 .button:hover {
@@ -35,8 +43,8 @@ justify-content: center;
 }
 
 .button__link {
-    display: flex;
-    margin: auto;
+    display: block;
+    /* margin: auto; */
     font-size: 12px;
     font-family: bothampro_bold, sans-serif;
     text-transform: uppercase;

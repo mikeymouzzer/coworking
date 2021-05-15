@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Отзывы</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/index.html" class="logo__link">
+                    <img src="/img/logo.png" alt="" class="logo__img">
+                 </a>
+            </div>
+            <div class="contacts">
+                <div class="contacts__holder">
+                    <div class="phone">
+                        <a href="tel: +78000039210" class="phone__number">8 (800) 00-392-10</a>
+                    </div>
+                    <div class="schedule">
+                        <div class="schedule__title">
+                            График работы                            
+                        </div>
+                        <div class="schedule__desc">
+                            <div class="schedule__desc-hour">пн-вс: 9:00 - 20:00</div>
+                            <div class="schedule__desc-lunch">14:00 - 14:30</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </header>
+       
+    <!----I guess, it's right name for page content.-------------->
+
+       
+        <div class="container container--form">
+        <form action="#" class="form">
+            <h2 class="form__title">Оставить  отзыв</h2>
+                <div class="form__content">
+                    <div class="author">
+                        <label class="author__wrapper">
+                            <div class="author__title">
+                                Ваше имя
+                            </div>
+                            <input type="text" class="author__input">
+                        </label>
+                        <label class="author__wrapper">
+                            <div class="author__title">
+                                Ссылка на профиль VK
+                            </div>
+                            <input type="text" class="author__vk-link">
+                        </label>
+                    </div>
+                    <label class="massage">
+                        <div class="message__title">Текст отзыва</div>
+                        <textarea name="message" id="" cols="30" rows="10" class="message__text">
+                        </textarea>
+                    </label>
+                    <div class="buttons">
+                        <div class="radio">
+                            <div class="radio__title">Отображать фото в отзыве?</div>
+                            <div class="radio__holder">
+                                <label class="radio__item">
+                                    <input type="radio" name="yes_name" id="#">
+                                    <div class="radio__text">Да</div>
+                                </label>
+                                <label class="radio__item">
+                                    <input type="radio" name="yes_name" id="#">
+                                    <div class="radio__text">Нет</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="button-holder">
+                            <button class="button">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+        </form>
+        </div>
+        <!--ФУТЕР------------------------------------------>
+        <footer class="footer">
+            <div class="container">
+                <div class="copyright">
+                    Сделано с любовью и старанием на&nbsp;курсе "HTML + CSS" в <a href="https://loftschool.com/" class="copyright__link">LoftSchool</a>.
+                    Автор&nbsp;работы: <a href="" class="copyright__link">Винни&nbsp;Пух</a>
+                </div>
+                <div class="logo">
+                    <a href="/html/alcove.html" class="logo__link">
+                        <img src="/img/logo.png" alt="" class="logo__img">
+                    </a>
+                </div>
+                <div class="social-holder">
+                    <div class="social">
+                        <div class="social__title">
+                            Наши социальные сети
+                        </div>
+                        <ul class="social__list">
+                            <li class="social__item social__item"><a href="" class="social__link social__link-vk"></a></li>
+                            <li class="social__item"><a href="" class="social__link social__link-fb"></a>
+                            </li>
+                            <li class="social__item"><a href="" class="social__link social__link-twitter"></a>
+                            </li>
+                            <li class="social__item"><a href="" class="social__link social__link-mail"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+<!-- TO DO:
+    flex in header
+    strict volume for sidebar
+    сжимаемость cover__img
+    object-fit: cover
+    %
+     -->
